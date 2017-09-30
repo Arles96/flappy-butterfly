@@ -8,6 +8,7 @@ package Personajes;
 import Principal.Personajes;
 import java.awt.Graphics;
 import java.awt.Image;
+import javax.swing.ImageIcon;
 
 
 
@@ -19,8 +20,8 @@ public class Ave extends Personajes{
     
     //Atributos
     
-    public final static Image imagen1 = null;
-    public final static Image imagen2 = null;
+    private final Image imagen1 = new ImageIcon(getClass().getResource("/img/pajaro1.jpeg")).getImage();
+    private final Image imagen2 = new ImageIcon(getClass().getResource("/img/pajaro2.jpeg")).getImage();
     private boolean parar = false;
     private final int width = 100;
     private final int heigth = 70;
@@ -28,8 +29,9 @@ public class Ave extends Personajes{
     
     //Constructor
 
-    public Ave(int x, int y, Image imagen) {
-        super(x, y, imagen);
+    public Ave(int x, int y) {
+        super(x, y);
+        super.imagen = imagen1;
     }
     
     //getter y setter

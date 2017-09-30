@@ -8,6 +8,7 @@ package Cosas;
 import Principal.Personajes;
 import java.awt.Graphics;
 import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -19,12 +20,13 @@ public class Flores extends Personajes{
     private boolean para = false;
     private int width;
     private int heigth;
-    private final Image imagen = null;
+    private final Image imagen1 = new ImageIcon(getClass().getResource("/img/flor.jpeg")).getImage();
     
     //Constructor
 
-    public Flores(int x, int y, Image imagen) {
-        super(x, y, imagen);
+    public Flores(int x, int y) {
+        super(x, y);
+        super.imagen = imagen1;
     }
     
     // getter y setter

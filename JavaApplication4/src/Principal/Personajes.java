@@ -18,11 +18,11 @@ public abstract class Personajes extends Thread{
     protected int y;
     protected Image imagen;
 
-    public Personajes(int x, int y, Image imagen) {
+    public Personajes(int x, int y) {
         super();
         this.x = x;
         this.y = y;
-        this.imagen = imagen;
+        this.imagen = null;
     }
 
     public int getX() {

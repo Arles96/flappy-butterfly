@@ -23,8 +23,8 @@ public class Mariposa extends Personajes{
     
     //Constructor
     
-    public Mariposa(int x, int y, Image imagen) {
-        super(x, y, imagen);
+    public Mariposa(int x, int y) {
+        super(x, y);
     }
     
     // Metodos de admsnitracion

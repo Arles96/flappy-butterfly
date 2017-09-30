@@ -10,7 +10,10 @@ import Cosas.Flores;
 import Personajes.Ave;
 import Personajes.Mariposa;
 import java.awt.Graphics;
+import java.io.IOException;
 import java.util.ArrayList;
+import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,7 +38,13 @@ public class Lienzo extends javax.swing.JPanel {
     //Metodos de admisnitracion
     
     private void configuraciones(){
-        
+        /*try {
+            BackgroundBorder border = new 
+                BackgroundBorder(ImageIO.read(getClass().getResource("../img/paisaje.jpeg")));
+            this.setBorder(border);
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, e.toString());
+        }*/
     }
     
     @Override
