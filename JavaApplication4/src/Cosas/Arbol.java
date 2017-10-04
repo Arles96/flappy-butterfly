@@ -20,13 +20,12 @@ public class Arbol extends Personajes {
     private boolean parar = false;
     private int width;
     private int heigth;
-    private final Image imagen1 = new ImageIcon(getClass().getResource("/img/arbol.jpeg")).getImage();
+    private final Image imagen = new ImageIcon(getClass().getResource("/img/arbol.jpeg")).getImage();
     
     //Constructor
 
     public Arbol(int x, int y) {
         super(x, y);
-        super.imagen = imagen1;
     }
     
     // getter y setter
@@ -62,6 +61,10 @@ public class Arbol extends Personajes {
         
     }
 
+    @Override
+    public void run (){
+        
+    }
     
     
 }

@@ -25,12 +25,7 @@ public class Ventana extends javax.swing.JFrame {
     }
     
     private void configuraciones(){
-        try {
-            BackgroundBorder border = new BackgroundBorder(ImageIO.read(getClass().getResource("/img/paisaje.jpeg")));
-            lienzo1.setBorder(border);
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, e.toString());
-        }
+        
     }
 
     /**

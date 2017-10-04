@@ -9,10 +9,12 @@ import Cosas.Arbol;
 import Cosas.Flores;
 import Personajes.Ave;
 import Personajes.Mariposa;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,18 +40,14 @@ public class Lienzo extends javax.swing.JPanel {
     //Metodos de admisnitracion
     
     private void configuraciones(){
-        /*try {
-            BackgroundBorder border = new 
-                BackgroundBorder(ImageIO.read(getClass().getResource("../img/paisaje.jpeg")));
-            this.setBorder(border);
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, e.toString());
-        }*/
+        
     }
     
     @Override
     public void paint (Graphics g){
-        
+        g.drawImage(new ImageIcon(getClass().getResource("/img/paisaje.jpeg")).getImage(), 0, 0, this.getWidth(), this.getHeight(), null);
+        g.setColor(Color.red);
+        g.fillOval(50, 50, 150, 150);
     }
 
     /**

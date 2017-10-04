@@ -31,7 +31,6 @@ public class Ave extends Personajes{
 
     public Ave(int x, int y) {
         super(x, y);
-        super.imagen = imagen1;
     }
     
     //getter y setter

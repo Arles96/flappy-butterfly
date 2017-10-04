@@ -26,7 +26,6 @@ public class Flores extends Personajes{
 
     public Flores(int x, int y) {
         super(x, y);
-        super.imagen = imagen1;
     }
     
     // getter y setter
@@ -59,7 +58,7 @@ public class Flores extends Personajes{
 
     @Override
     public void paint(Graphics g) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }
